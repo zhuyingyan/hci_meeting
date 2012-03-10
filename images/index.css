@@ -8,11 +8,15 @@
 	width:100%;
 	height:43px;
 	background:url("top_background.gif") repeat-x;
+	position:fixed;
+	top:0;
+	left:0;
 }
 #header{
 	width:100%;
 	background:url("head_background.gif") repeat-x;
 	height:91px;
+	margin-top:43px;
 }
 #article{
 	margin:0 auto 0 auto;
@@ -99,7 +103,7 @@
 #right_information table td a:hover{
 	text-decoration:underline;
 }
-#personal_information{
+#personal_information , #modify_information,#modify_password,#finished_projects{
 	clear:both;
 	padding-top:30px;
 }
@@ -113,18 +117,68 @@
 	float:left;
 	padding-left:48px;
 }
-#personal_information div.message{
+#personal_information div.message,#modify_information div.message,#modify_password div.message{
 	padding-bottom:10px;
 }
-#personal_information div.message h2{
+#personal_information div.message h2,#modify_information div.message h2,#modify_password div.message h2{
 	border-bottom:#84b600 solid 2px;
 	text-align:left;
 	width:540px;
 	margin-bottom:5px;
 }
-#personal_information div.message p{
+#personal_information div.message p,#modify_information div.message p,#modify_password div.message p{
 	padding:3px 0px 3px 0px;
 	text-align:left;
+}
+#modify_information div.center,#modify_password div.center,#finished_projects div.center{
+	text-align:left;
+	float:left;
+	padding-bottom:20px;
+}
+#modify_information div.message p i{
+	color:#F00;
+	font-style:normal;
+}
+#modify_information div.message p input,#modify_password div.message p input{
+	text-align:left;
+}
+#modify_information .button,#modify_password .button{
+	background:url(save.png) repeat-x;
+	width:51.51px;
+	height:28px;
+	border:0px;
+	cursor:pointer;
+	color:#f5f97f;
+	font-size:14px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+#finished_projects div.project{
+	width:693px;
+	border:#99c944 solid 2px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-box-shadow:2px 3px 4px #b4bea3;
+	-webkit-box-shadow:2px 3px 4px #b4bea3;
+	padding:25px;
+	margin-bottom:20px;
+}
+#finished_projects div.project img{
+	width:119px;
+	height:142px;
+	float:left;
+	background:#993;
+}
+#finished_projects div.project div.list{
+	padding-left:20px;
+	float:left;
+}
+#finished_projects div.project div p{
+	padding-bottom:20px;
+	text-align:left;
+}
+#finished_projects div.project .clear{
+	clear:both;
 }
 #footer{
 	clear:both;
