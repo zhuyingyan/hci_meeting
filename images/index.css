@@ -11,6 +11,7 @@
 	position:fixed;
 	top:0;
 	left:0;
+	z-index:100;
 }
 #header{
 	width:100%;
@@ -103,7 +104,7 @@
 #right_information table td a:hover{
 	text-decoration:underline;
 }
-#personal_information , #modify_information,#modify_password,#finished_projects{
+#personal_information , #modify_information,#modify_password,#finished_projects£¬#unfinished_projects{
 	clear:both;
 	padding-top:30px;
 }
@@ -130,7 +131,7 @@
 	padding:3px 0px 3px 0px;
 	text-align:left;
 }
-#modify_information div.center,#modify_password div.center,#finished_projects div.center{
+#modify_information div.center,#modify_password div.center,#finished_projects div.center,#unfinished_projects div.center{
 	text-align:left;
 	float:left;
 	padding-bottom:20px;
@@ -153,7 +154,7 @@
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 }
-#finished_projects div.project{
+#finished_projects div.project,#unfinished_projects div.project{
 	width:693px;
 	border:#99c944 solid 2px;
 	-moz-border-radius:4px;
@@ -162,22 +163,33 @@
 	-webkit-box-shadow:2px 3px 4px #b4bea3;
 	padding:25px;
 	margin-bottom:20px;
+	background:#fff;
 }
-#finished_projects div.project img{
+#finished_projects div.project img,#unfinished_projects div.project img{
 	width:119px;
 	height:142px;
 	float:left;
 	background:#993;
 }
-#finished_projects div.project div.list{
+#finished_projects div.project div.list,#unfinished_projects div.project div.list{
 	padding-left:20px;
 	float:left;
+	text-align:left;
 }
-#finished_projects div.project div p{
+#finished_projects div.project div p,#unfinished_projects div.project div p{
 	padding-bottom:20px;
 	text-align:left;
 }
-#finished_projects div.project .clear{
+#unfinished_projects div.project .button{
+	background:url(week.png);
+	width:87.5px;
+	height:33.5px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border:solid #608c03 1px;
+	cursor:pointer;
+}
+#finished_projects div.project .clear,#unfinished_projects div.project .clear{
 	clear:both;
 }
 #footer{
