@@ -107,34 +107,37 @@
 #right_information table td a:hover{
 	text-decoration:underline;
 }
-#personal_information , #modify_information,#modify_password,#finished_projects£¬#unfinished_projects{
+#personal_information , #modify_information,#modify_password,#finished_projects,#unfinished_projects,#personal_list{
 	clear:both;
 	padding-top:30px;
 }
-#personal_information img{
+#personal_information img,#detail_information img{
 	float:left;
 	width:137px;
 	height:157px;
 	background:#000;
 }
-#personal_information div.center{
+#personal_information div.center,#detail_information div.center{
 	float:left;
-	padding-left:48px;
+	padding-left:28px;
 }
-#personal_information div.message,#modify_information div.message,#modify_password div.message{
+#personal_information div.message,#modify_information div.message,#modify_password div.message,#detail_information div.message{
 	padding-bottom:10px;
 }
-#personal_information div.message h2,#modify_information div.message h2,#modify_password div.message h2{
+#personal_information div.message h2,#modify_information div.message h2,#modify_password div.message h2,#detail_information div.message h2{
 	border-bottom:#84b600 solid 2px;
 	text-align:left;
 	width:540px;
 	margin-bottom:5px;
 }
-#personal_information div.message p,#modify_information div.message p,#modify_password div.message p{
+#personal_information div.message h2,#detail_information div.message h2{
+	width:519px;
+}
+#personal_information div.message p,#modify_information div.message p,#modify_password div.message p,#detail_information div.message p{
 	padding:3px 0px 3px 0px;
 	text-align:left;
 }
-#modify_information div.center,#modify_password div.center,#finished_projects div.center,#unfinished_projects div.center{
+#modify_information div.center,#modify_password div.center,#finished_projects div.center,#unfinished_projects div.center,#personal_list div.center{
 	text-align:left;
 	float:left;
 	padding-bottom:20px;
@@ -160,6 +163,7 @@
 #finished_projects div.project,#unfinished_projects div.project{
 	width:616px;
 	border:#99c944 solid 2px;
+	border-radius:4px;
 	-moz-border-radius:4px;
 	-webkit-border-radius:4px;
 	-moz-box-shadow:2px 3px 4px #b4bea3;
@@ -192,16 +196,46 @@
 	border:solid #608c03 1px;
 	cursor:pointer;
 }
-#finished_projects div.project .clear,#unfinished_projects div.project .clear{
+#personal_list div.center{
+	padding-left:16px;
+	padding-right:16px;
+	padding-bottom:0px;
+}
+#personal_list div.center div.person{
+	width:171px;
+	margin-left:21px;
+	margin-right:21px;
+	margin-bottom:20px;
+	float:left;
+	border:#99c944 solid 2px;
+	border-radius:4px;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-box-shadow:2px 3px 4px #b4bea3;
+	-webkit-box-shadow:2px 3px 4px #b4bea3;
+	text-align:center;
+	padding:14px 0;
+}
+#personal_list div.center div.person img{
+	width:120px;
+	height:140px;
+	background:#FCF;
+}
+#finished_projects div.project .clear,#unfinished_projects div.project .clear,#personal_list div.clear{
 	clear:both;
+}
+#detail_information{
+	width:684px;
+	height:376px;
+	border:#99c944 solid 2px;
+	border-radius:4px;
+	padding:5px 5px 0px 5px;
+	
 }
 #footer{
 	clear:both;
 	width:100%;
 	height:43px;
 	background:url("top_background.gif") repeat-x;
-	position:fixed;
-	bottom:0;
-	left:0;
 	z-index:100;
 }
