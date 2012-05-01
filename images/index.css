@@ -1,26 +1,218 @@
-*{
+﻿*{
 	margin:0;
 	padding:0;
 	text-align:center;
 	font-family:"宋体", "Arial Unicode MS", sans-serif;
 }
-#top{
+   /*the index part*/
+body{
+	
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+
+#container{
+	position:relative;
 	width:100%;
-	height:43px;
-	background:url("top_background.gif") repeat-x;
+	min-width:1000px;
+	margin:0 auto;
+	padding:0;
+	background-color:#dbddc1;
+	text-align:center;
+	
+}
+.loginIn{
+	padding-top:9px;
+	color:#fff;
+	position:absolute;
+	right:10px;
+}
+.loginIn a{
+	color:#fff;
+	text-decoration:none;
+	padding:0 3px;
+}
+.loginIn a:hover{
+	text-decoration:underline;
+}
+.topBackground{
+	width:100%;
+	height:40px;
+	background:#729c00;
 	position:fixed;
 	top:0;
 	left:0;
 	z-index:100;
 }
-#header{
-	width:100%;
-	background:url("head_background.gif") repeat-x;
-	height:91px;
-	margin-top:43px;
+.forSearch{
+	height:40px;
+	background:#729c00;
+	width:900px;
+	position:relative;
+	margin:0 auto;
 }
+.search{
+	padding-top:5px;
+}
+.inputCss{
+	font-size:16px;
+	text-align:left;
+	padding:1px 0;
+}
+#top2{
+	width:100%;	
+	background-image:url(blackbar.png);
+	height:100px;
+	margin-top:40px;
+}
+
+#topcontent{
+	height:100px;
+	background-image:url(blackbar.png);
+	width:900px;
+	position:relative;
+	margin:0 auto;
+}
+#logo{
+	width:80px;
+	height:70px;	
+	float:left;
+	margin-top:25px;
+	
+}
+#title{
+	float:left;
+}
+div.search{
+	border:0;
+	position:relative;	
+	float:right;
+}
+div.search table td{
+	padding-left:5px;
+}
+
+#send{
+	width:80px;
+	height:27px;
+	background:url(login.png);
+	border:0;
+	cursor:pointer;
+}	
+#navigation{
+	width:370px;
+	height:28px;
+	margin-top:73px ;
+	float:right;
+}
+#navigation ul{
+	padding:0;
+	margin:0 ;
+	list-style:none;
+}
+#navigation ul li {
+	font-size:16px;
+	font-family:"微软雅黑";
+    color:#ffffff;
+	text-decoration:none; 
+	position:relative;
+	float:left;
+	width:90px;
+	height:26px;/*控制导航条高度*/
+	display:block;
+}
+#navigation ul li a{
+	color:#c4bdbc;
+	 text-decoration:none; 
+	 width:80px;
+	 font-family:"微软雅黑";
+	 }
+.thread:hover{
+	border-right:#c4bdbc 1px solid; 
+}
+.thread{
+	border-right:#938a87 1px solid; 
+}
+*#navigation ul li a:hover{
+	color:#a1d602;
+ 
+   }
+   #navigation ul li:hover{
+	background:url(blackblock.png); 
+	color:#edf501; 
+  }
+#mainshow{
+	height:352px;
+	background:#ffffff;
+	text-align:center;
+	border-bottom:#729c00 2px solid;
+}
+#middle{
+	 margin:0 auto;
+	 width:1000px;
+	 height:350px; 
+	 overflow:hidden; 
+	 clear:both;
+	 }
+
+#index_article{
+	width:960px;
+	height:350px;
+	text-align:left;
+	margin:0 auto;
+	background:#FFFFFF;
+}
+
+#index_article ul{
+	padding:0;
+	margin:10px auto 0 60px;
+	list-style:none;
+	line-height:30px;
+	text-align:left; 
+}
+#index_article ul li a{
+	color:#333;
+	font-size:16px;
+	font-family:"宋体";
+	font-weight:bold;
+	text-decoration:none;
+	padding:10px auto 0 10px;
+}
+#index_article ul li a:hover{
+	color:#060;
+	text-decoration:underline;
+}
+.news{
+	text-align:left;
+	width:330px;
+	height:350px;
+	border-right:#dbddc1 1px solid;
+	float:left;
+}
+.news:hover{
+background:url(greenbar.png);
+}
+.share:hover{
+background:url(greenbar.png);
+}
+.news img{
+	margin:20px auto 10px 50px;
+}
+.share{
+	text-align:left;
+	width:627px;
+	height:350px;
+	float:left;
+}	
+.share img{
+	margin:20px auto 10px 50px;
+}
+
+
+/*the sub part*/
 #article{
-	margin:0 auto 0 auto;
+	margin:0 auto;
 	position:relative;
 	width:1024px;
 	width:960px;
@@ -49,19 +241,21 @@
 	list-style:none;
 	height:194px;
 }
-#left_nav li{
-	padding-left:45px;
-	text-align:left;
-	width:150px;
-	padding-bottom:8px;
-}
+
 #left_nav li a{
-	font-size:16px;
+	display:block;
+	padding-left:45px;
+	padding-bottom:8px;
+	width:150px;
+	font-size:17px;
 	color:#949494;
 	text-decoration:none;
+	text-align:left;
+	
 }
 #left_nav li a:hover{
 	color:#000;
+	background:url(flower.png) no-repeat 150px 2px;
 }
 #left_nav li img{
 	padding-left:10px;
@@ -110,6 +304,7 @@
 #personal_information , #modify_information,#modify_password,#finished_projects,#unfinished_projects,#personal_list{
 	clear:both;
 	padding-top:30px;
+	overflow:hidden;
 }
 #personal_information img,#detail_information img{
 	float:left;
@@ -148,12 +343,13 @@
 }
 #modify_information div.message p input,#modify_password div.message p input{
 	text-align:left;
+	font-size:16px;
 }
 #modify_information .button,#modify_password .button{
 	background:url(save.png) repeat-x;
 	width:51.51px;
 	height:28px;
-	border:0px;
+	border:0;
 	cursor:pointer;
 	color:#f5f97f;
 	font-size:14px;
@@ -232,10 +428,15 @@
 	padding:5px 5px 0px 5px;
 	
 }
-#footer{
+#foot{
 	clear:both;
-	width:100%;
-	height:43px;
-	background:url("top_background.gif") repeat-x;
-	z-index:100;
+	height:50px;
+	background:#729c00;
+	margin:0 auto;
+}
+#foot p{
+	font-size:16px;
+	font-family:"宋体";
+	color:#000;
+	margin:0px auto auto auto;
 }
