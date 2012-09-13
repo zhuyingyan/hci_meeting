@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>hci meeting</title>
-<link href="images/index.css" rel="stylesheet" type="text/css" />
+<link href="css/index.css" rel="stylesheet" type="text/css" />
 <link rel = "Shortcut Icon" href="images/avicon.png" type="image/x-icon"/>
 </head>
 
@@ -33,58 +33,58 @@
      </div>
      </div>
 </div>
-<div id="article">
-  <div id="left_nav">
-    <h3>个人中心</h3>
-    <ul>
-      <li><a href="#" target="_blank">个人信息</a></li>
-      <li><a href="#" target="_blank">修改信息</a></li>
-      <li><a href="#" target="_blank">修改密码</a></li>
-      <li><a href="#" target="_blank">修改头像</a></li>
-      <li><a href="#" target="_blank">已完成项目</a></li>
-      <li><a href="#" target="_blank">未完成项目</a></li>
-    </ul>
-    <div id="left_navfoot"></div>
-  </div>
-  <div id="right_information">
-    <h3>已完成项目</h3>
-    <table>
-      <tr>
-        <td><a href="#"><img src="images/home.png" /></a></td>
-        <td>></td>
-        <td><a href="#">个人中心</a></td>
-        <td>></td>
-        <td><a href="#">已完成项目</a></td>
-      </tr>
-    </table>
-    <div id="finished_projects">
-      <div class="center">
-        <div class="project">
-         <img />
-          <div class="list">
-            <p>项目名字：XX</p>
-            <p>项目成员：XX</p>
-            <p>项目简介：XXXXXXXX</p>
-          </div>
-          <div class="clear"></div>
-        </div>
-        <div class="project">
-         <img />
-          <div class="list">
-            <p>项目名字：XX</p>
-            <p>项目成员：XX</p>
-            <p>项目简介：XXXXXXXX</p>
-          </div>
-          <div class="clear"></div>
-        </div>
-      </div>
-    </div>
-  </div>
+<div id="article" class="article">
+	<div id="nav" class="navSub">
+		<h3 class="navSubTitle">个人中心</h3>
+		<ul class="navSubContent">
+			<li><a href="#" target="_blank">个人信息</a></li>
+			<li><a href="#" target="_blank">修改信息</a></li>
+			<li><a href="#" target="_blank">修改密码</a></li>
+			<li><a href="#" target="_blank">修改头像</a></li>
+			<li><a href="#" target="_blank">已完成项目</a></li>
+			<li><a href="#" target="_blank">未完成项目</a></li>
+		</ul>
+	</div>
+	<div id="information" class="information">
+		<h3 class="infoTitle">已完成项目</h3>
+		<p class="path">
+			<a class="pathAnchor" href="#"><img src="images/home.png" alt="back to index" /></a>><a class="pathAnchor" href="#">个人中心</a>><a class="pathAnchor" href="#">已完成项目</a>
+		</p>
+		<div id="finished_projects" class="mainContent">
+			<div class="center">
+				<div class="project">
+					<img src="" alt="" />
+					<div class="list">
+						<p>项目名字：XX</p>
+						<p>项目成员：XX</p>
+						<p>项目简介：XXXXXXXX</p>
+					</div>
+				</div>
+				<div class="project">
+					<img src="" alt="" />
+					<div class="list">
+						<p>项目名字：XX</p>
+						<p>项目成员：XX</p>
+						<p>项目简介：XXXXXXXX</p>
+					</div>
+				</div>
+			</div>
+			<p class="page">
+				<a href="">上一页</a>
+				<a href="">1</a>
+				<a href="">2</a>
+				<a href="">3</a> ...
+				<a href="">6</a>
+				<a href="">7</a>
+				<a href="">下一页</a>
+			</p>
+		</div>
+	</div>
 </div>
-<div id="foot">
+<div id="foot" class="footer">
    <p>copyright: HCI Studio@ SCAU</p>
-   </div>
-   </div>
+</div>
+</div>
 
 </body>
 </html>
