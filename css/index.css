@@ -217,7 +217,7 @@ background:url(../images/greenbar.png);
 	width:960px;
 	padding-top:36px;
 }
-.article:after,.project:after{
+.article:after,.project:after,.border:after{
 	content:"";
 	display:block;
 	visibility:hidden;
@@ -410,6 +410,7 @@ background:url(../images/greenbar.png);
 	-webkit-box-shadow:2px 3px 4px #b4bea3;
 	text-align:center;
 	padding:14px 0;
+	cursor:pointer;
 }
 .person img{
 	width:120px;
@@ -455,4 +456,39 @@ background:url(../images/greenbar.png);
 .fixedFooter{
 	position:fixed;
 	bottom:0;
+}
+.outputDiv{
+	display:none;
+	background:#000;
+	background:rgba(0,0,0,.8);
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:1000;
+}
+.output{
+	display:block;
+}
+.border{
+	margin:0 auto;
+	width:698px;
+	border-image:url("../images/borders.png") 19 20 19 20/19px;
+	-moz-border-image:url("../images/borders.png") 19 20 19 20/19px;
+	-webkit-border-image:url("../images/borders.png") 19 20 19 20/19px;
+}
+.outputDetail{
+	background:#fff;
+}
+.close{
+	text-indent:-1000em;
+	float:right;
+	width:23px;
+	height:23px;
+	background:url(../images/controls.png) -27px 0 no-repeat;
+	cursor:pointer;
+}
+.close:hover{
+	background:url(../images/controls.png) -27px -25px no-repeat;
 }

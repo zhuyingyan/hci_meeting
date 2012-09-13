@@ -1,0 +1,1 @@
+my.addLoadEvent(my.showMessage.call(my));

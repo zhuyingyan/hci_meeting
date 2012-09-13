@@ -6,15 +6,6 @@
 <link href="css/index.css" rel="stylesheet" type="text/css" />
 <link href="colorbox.css" rel="stylesheet" type="text/css" />
 <link rel = "Shortcut Icon" href="images/avicon.png" type="image/x-icon"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script src="js/jquery.colorbox.js"></script>
-<script>
-$(document).ready(function(){
-	var wid=$("#detail_information").outerWidth()+44;
-	var wids=wid+"px";
-	$("#personal_list .person a").colorbox({inline:true, width:wids});
-});
-</script>
 </head>
 
 <body>
@@ -63,28 +54,28 @@ $(document).ready(function(){
 		<div id="personal_list" class="mainContent">
 			<div class="center hasPerson">
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png"/>
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png" />
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png" />
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png"/>
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png" />
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 				<div class="person">
-					<a href="#detail_information"><img src="images/pic.png" />
-					<p>XXX</p></a>
+					<img src="images/pic.png"/>
+					<p>XXX</p>
 				</div>
 			</div> 
 			<p class="page">
@@ -104,30 +95,35 @@ $(document).ready(function(){
 </div>
 </div>
 <!-- 点击后弹出的具体信息-->
-<div style='display:none'>
-<div id="detail_information" class="mainContent outputDetail">
-	<img class="mainConImg" src="" alt="" />
-    <div class="center hasImg">
-		<div class="message">
-			<h2>基本信息</h2>
-			<p>姓名：XXX</p>
-			<p>学号：XXX</p>
-			<p>专业：XXX</p>
-			<p>手机：XXX</p>
-			<p>邮箱：XXX</p>
-			<p>家乡：XXX</p>
+<div id="outputDiv" class="outputDiv">
+	<div class="border">
+		<div id="detail_information" class="mainContent outputDetail">
+			<img class="mainConImg" src="" alt="" />
+			<div class="center hasImg">
+				<div class="message">
+					<h2>基本信息</h2>
+					<p>姓名：XXX</p>
+					<p>学号：XXX</p>
+					<p>专业：XXX</p>
+					<p>手机：XXX</p>
+					<p>邮箱：XXX</p>
+					<p>家乡：XXX</p>
+				</div>
+				<div class="message">
+					<h2>兴趣爱好</h2>
+					<p>书籍：XXX</p>
+					<p>运动：XXX</p>
+					<p>音乐：XXX</p>
+					<p>电影：XXX</p>
+					<p>研究技术：XXX</p>
+					<p>其他爱好：XXX</p>     
+				</div>
+			</div>
 		</div>
-		<div class="message">
-			<h2>兴趣爱好</h2>
-			<p>书籍：XXX</p>
-			<p>运动：XXX</p>
-			<p>音乐：XXX</p>
-			<p>电影：XXX</p>
-			<p>研究技术：XXX</p>
-			<p>其他爱好：XXX</p>     
-		</div>
-    </div>
+		<a class="close">close</a>
+	</div>
 </div>
-</div>
+<script type="text/javascript" src="js/myJs.js"></script>
+<script type="text/javascript" src="js/showOut.js"></script>
 </body>
 </html>
